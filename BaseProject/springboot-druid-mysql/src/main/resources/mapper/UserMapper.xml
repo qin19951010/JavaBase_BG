@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+    笔记知识点:
+
+        resultType:
+
+                1、基本类型:     resultType = 基本类型
+                2、List类型:    resultType = List中元素的类型
+                3、Map类型:     resultType = map
+
+        parameterType : 表示输入的参数类型
+        # 和 & :
+            在mapper引用变量时,默认使用的是# :占位符方式
+            select * from user where id=#{id};
+            实际执行:
+            ==>  Preparing: select * from user where userid=?
+            ==> Parameters: 09900(String)
+            <==      Total: 1
+
+
+            还可以使用$来引用一个变量   :参数拼接方式
+            参数拼接会存在SQL注入的风险
+            select * from user where id=${id};
+            实际执行:
+            ==>  Preparing: select * from user where userid=09900
+            ==> Parameters:
+            <==      Total: 1
+
+            1)#{}:为参数占位符?,即预编译
+              ${}:为字符串替换,即Sql拼接
+
+            2)#{}:动态解析 -> 预编译 -> 执行
+              ${}:动态解析 -> 编译 -> 执行
+
+            3)#{}:的变量替换是在 DBMS 中
+              ${}:的变量替换是在 DBMS 外
+
+            4)变量替换后, #{} 对应的变量自动加上单引号 ''
+              变量替换后, ${} 对应的变量不会加上单引号 ''
+
+            5)#{} 能防止sql 注入
+              ${} 不能防止sql 注入
+
+            6)#{} 和 ${} 的实例：假设传入参数为 1
+            1.开始 ==>    #{}:select * from t_user where uid=#{uid}
+                         ${}:select * from t_user where uid= '${uid}'
+            2.接着 ==>    #{}:select * from t_user where uid= ?
+                         ${}:select * from t_user where uid= '1'
+            3.最终 ==>    #{}:select * from t_user where uid= '1'
+                         ${}:select * from t_user where uid= '1'
+
+            7)#{} 和 ${} 的大括号中的值
+             @Param 指定了参数类型之后,在XML文件中就不用定义parameterType了
+             一.单个参数
+              1.#{}
+                无MyBatis 默认值，可任意，且与参数名无关
+                public User getUser(Integer uid)
+
+                <select id="getUser" resultType="User">
+                    select * from user where uid=#{uid}
+                </select>
+
+              2.${}
+                <1>使用 MyBatis 默认值 value，即 ${value}
+                public User getUser(Integer uid)
+
+                <select id="getUser" resultType="User">
+                    select * from user where uid=${value}
+                </select>
+
+                <2>使用自定义参数名,前提:在映射器接口方法的参数前加注解@Param("")
+                public User getUser(@Param("uid") Integer uid)
+
+                <select id="getUser" resultType="User">
+                    select * from user where uid=${uid}
+                </select>
+
+             一.多个参数
+              1.#{}
+               <1>使用MyBatis 默认值 arg0、arg1、arg2 … 或 param1、param2、param3 …
+                public User getUser(String username,String userid)
+
+                <select id="getUser" resultType="User">
+                    select * from user where username=#{arg0} and userid = #{arg1}
+                </select>
+
+                <2>使用自定义参数名,前提:在映射器接口方法的参数前加注解@Param("")
+                public User getUser(@Param("username") String username,@Param("password") String userid)
+
+                <select id="getUser" resultType="User">
+                    select * from user where username=#{username} and password = #{password}
+                </select>
+              2.${}
+                <1>使用MyBatis 默认值 arg0、arg1、arg2 … 或 param1、param2、param3 …
+                public User getUser(String username,String userid)
+
+                <select id="getUser" resultType="User">
+                    select * from user where username=#{param1} and userid = #{param2}
+                </select>
+
+                <2>使用自定义参数名，前提：在映射器接口方法的参数前加注解@Param("")
+                public User getUser(@Param("username") String username,@Param("password") String userid)
+
+                <select id="getUser" resultType="User">
+                    select * from user where username=${username} and password = ${password}
+                </select>
+
+            8)#{} 和 ${} 在使用中的技巧和建议
+            （1）不论是单个参数，还是多个参数，一律都建议使用注解@Param("")
+            （2）能用 #{} 的地方就用 #{}，不用或少用 ${}
+            （3）表名作参数时，必须用 ${}。如：select * from ${tableName} [重点]
+            （4）order by 时，必须用 ${}。如：select * from t_user order by ${columnName} [重点]
+            （5）使用 ${} 时，要注意何时加或不加单引号，即 ${} 和 '${}' [重点]
+
+      动态节点:
+
+-->
+<mapper namespace="com.jiangnanyidianyu.dao.UserDao">
+
+</mapper>
+<!--<mapper namespace="com.jiangnanyidianyu.dao.UserDao">-->
+<!--    <select id="getUserById" parameterType="String" resultType="user">-->
+<!--        select * from user where userid=#{userid}-->
+<!--    </select>-->
+
+<!--    <select id="getUserById2" parameterType="String" resultType="user">-->
+<!--        select * from user where userid=${userid}-->
+<!--    </select>-->
+
+<!--    <insert id="InsertUsersbyUUID" parameterType="com.jiangnanyidianyu.bean.user">-->
+<!--        /*-->
+<!--          selectKey: 表示查询key-->
+<!--          keyProperty: 属性表示将查询的结果赋值给传递进来的 User 对象的 id 属性-->
+<!--          resultType: 表示查询结果的返回类型-->
+<!--          order: 表示这个查询操作的执行时机,BEFORE表示这个查询操作在Insert之前执行-->
+<!--        */-->
+<!--        <selectKey resultType="java.lang.String" keyProperty="userid" order="BEFORE">-->
+<!--            select uuid();-->
+<!--        </selectKey>-->
+<!--        insert into user (userid,username,pwd,mark) values (#{userid},#{username},#{pwd},#{mark});-->
+<!--    </insert>-->
+
+<!--    <delete id="deleteById" parameterType="user">-->
+<!--        delete from user where userid = #{userid}-->
+<!--    </delete>-->
+
+<!--    <update id="updateById" parameterType="com.jiangnanyidianyu.bean.user">-->
+<!--        update user set username = #{username},pwd = #{pwd},mark = #{mark} where userid = #{userid}-->
+<!--    </update>-->
+
+<!--&lt;!&ndash;    <insert id="addUser" parameterType="user">&ndash;&gt;-->
+<!--&lt;!&ndash;        insert into&ndash;&gt;-->
+<!--&lt;!&ndash;        user (userid,username,pwd,favorites,mark,regTime)&ndash;&gt;-->
+<!--&lt;!&ndash;        values (#{userid},#{username},#{pwd},#{favorites,typeHandler=com.jiangnanyidianyu.handler.List2VarcharHandler},#{mark},#{regTime});&ndash;&gt;-->
+<!--&lt;!&ndash;    </insert>&ndash;&gt;-->
+
+<!--    &lt;!&ndash;通过$拼接的方式&ndash;&gt;-->
+<!--    <select id="FuzzyQueryAllUserById1" parameterType="String" resultType="user">-->
+<!--      select * from user where userid like '%${userid}%'-->
+<!--      /* 实际执行:select * from user where userid like '%9900%' */-->
+<!--    </select>-->
+
+<!--    &lt;!&ndash;通过concat拼接的方式&ndash;&gt;-->
+<!--    <select id="FuzzyQueryAllUserById2" parameterType="String" resultType="user">-->
+<!--      select * from user where userid like CONCAT('%',#{userid},'%')-->
+<!--      /* 实际执行:select * from user where userid like CONCAT('%',?,'%') */-->
+<!--    </select>-->
+
+<!--&lt;!&ndash;    <resultMap id="MyResultMap" type="com.jiangnanyidianyu.bean.user">&ndash;&gt;-->
+<!--&lt;!&ndash;        <id column="userid" property="userid"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <result column="username" property="username"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <result column="pwd" property="pwd"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash; 一样也会被查询出来 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <result column="favorites" property="favorites"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <result column="mark" property="mark"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <collection property="favorites" resultMap="favoritesList"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </resultMap>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <resultMap id="favoritesList" type="java.lang.String">&ndash;&gt;-->
+<!--&lt;!&ndash;        <result column="favorites"></result>&ndash;&gt;-->
+<!--&lt;!&ndash;    </resultMap>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <select id="getUserById3" resultMap="MyResultMap">&ndash;&gt;-->
+<!--&lt;!&ndash;        select * from user where userid=#{userid}&ndash;&gt;-->
+<!--&lt;!&ndash;    </select>&ndash;&gt;-->
+
+<!--    <resultMap id="userResultMap" type="com.jiangnanyidianyu.bean.user">-->
+<!--        <result typeHandler="com.jiangnanyidianyu.handler.Date2VarcharHandler" column="regTime" javaType="java.util.Date"-->
+<!--                jdbcType="VARCHAR"-->
+<!--                property="regTime"/>-->
+<!--    </resultMap>-->
+
+<!--    <select id="getUserByIdAboutDateHandler" resultMap="userResultMap">-->
+<!--        select * from user-->
+<!--    </select>-->
+
+<!--&lt;!&ndash;    <insert id="insertUser_HandlerType" parameterType="com.jiangnanyidianyu.bean.user">&ndash;&gt;-->
+<!--&lt;!&ndash;      insert into&ndash;&gt;-->
+<!--&lt;!&ndash;      user(userid,username,pwd,mark,favorites,regTime)&ndash;&gt;-->
+<!--&lt;!&ndash;      values (#{userid},#{username},#{pwd},#{mark},#{favorites,typeHandler=com.jiangnanyidianyu.handler.List2VarcharHandler},#{regTime,typeHandler=com.jiangnanyidianyu.handler.Date2VarcharHandler});&ndash;&gt;-->
+<!--&lt;!&ndash;    </insert>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;    <resultMap id="queryUser_HandlerType" type="com.jiangnanyidianyu.bean.user">&ndash;&gt;-->
+<!--&lt;!&ndash;        <result typeHandler="com.jiangnanyidianyu.handler.Date2VarcharHandler" column="regTime" javaType="java.util.Date"&ndash;&gt;-->
+<!--&lt;!&ndash;                jdbcType="VARCHAR"&ndash;&gt;-->
+<!--&lt;!&ndash;                property="regTime"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <result typeHandler="com.jiangnanyidianyu.handler.List2VarcharHandler" column="favorites" javaType="java.util.List"&ndash;&gt;-->
+<!--&lt;!&ndash;                jdbcType="VARCHAR"&ndash;&gt;-->
+<!--&lt;!&ndash;                property="favorites"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </resultMap>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <select id="QueryUserById_HandlerType" parameterType="String" resultMap="queryUser_HandlerType">&ndash;&gt;-->
+<!--&lt;!&ndash;      select userid,username,pwd,mark,favorites,regTime&ndash;&gt;-->
+<!--&lt;!&ndash;      from user&ndash;&gt;-->
+<!--&lt;!&ndash;      where userid = #{userid};&ndash;&gt;-->
+<!--&lt;!&ndash;    </select>&ndash;&gt;-->
+
+<!--    &lt;!&ndash; 动态SQL 分页查询 start:页码,count:查询的记录数&ndash;&gt;-->
+<!--    &lt;!&ndash; if &ndash;&gt;-->
+<!--    <select id="getUserByPage" resultMap="queryUser_HandlerType">-->
+<!--        select * from user-->
+<!--        <if test="start !=null and count!=null">-->
+<!--            limit #{start},#{count}-->
+<!--        </if>-->
+<!--    </select>-->
+
+<!--    &lt;!&ndash; where 和 if 关键字 &ndash;&gt;-->
+<!--    <select id="getUserByUsernameAndId" resultMap="queryUser_HandlerType">-->
+<!--        select * from user-->
+<!--        <where>-->
+<!--            <if test="userid != null">-->
+<!--                and userid = #{userid}-->
+<!--            </if>-->
+
+<!--            <if test="username != null">-->
+<!--                and username like concat('%',#{username},'%')-->
+<!--            </if>-->
+<!--        </where>-->
+
+<!--    </select>-->
+
+<!--    &lt;!&ndash; foreach关键字 &ndash;&gt;-->
+<!--    &lt;!&ndash; foreach 用来处理数组/集合参数。 &ndash;&gt;-->
+<!--    <select id="getUserByIds" resultMap="queryUser_HandlerType">-->
+<!--        select * from user where userid in-->
+<!--        <foreach collection="ids" open="(" close=")" item="userid" separator=",">-->
+<!--            #{userid}-->
+<!--        </foreach>-->
+<!--    </select>-->
+
+<!--    &lt;!&ndash; foreach批量插入 &ndash;&gt;-->
+<!--    <insert id="batchInsertUser">-->
+<!--        insert into user (userid,username,pwd,regTime) values-->
+<!--        <foreach collection="users" separator="," item="user">-->
+<!--            (#{user.userid},#{user.username},#{user.pwd},#{user.regTime,typeHandler=com.jiangnanyidianyu.handler.Date2VarcharHandler})-->
+<!--        </foreach>-->
+<!--    </insert>-->
+
+<!--    &lt;!&ndash; Sql片段 &ndash;&gt;-->
+<!--&lt;!&ndash;    <sql id="Base_Column">&ndash;&gt;-->
+<!--&lt;!&ndash;        userid,username,regTime,favorites&ndash;&gt;-->
+<!--&lt;!&ndash;    </sql>&ndash;&gt;-->
+
+<!--    <select id="getUserByIds2" resultMap="queryUser_HandlerType">-->
+<!--        select <include refid="Base_Column"/>-->
+<!--        from user-->
+<!--        where userid in-->
+<!--        <foreach collection="ids" open="(" close=")" item="userid" separator=",">-->
+<!--            #{userid}-->
+<!--        </foreach>-->
+<!--    </select>-->
+
+<!--    &lt;!&ndash; set,在更新不确定项使用 &ndash;&gt;-->
+<!--&lt;!&ndash;    <update id="updateUser" parameterType="user">&ndash;&gt;-->
+<!--&lt;!&ndash;       update user&ndash;&gt;-->
+<!--&lt;!&ndash;       <set>&ndash;&gt;-->
+<!--&lt;!&ndash;           <if test="regTime!=null">&ndash;&gt;-->
+<!--&lt;!&ndash;              regTime = #{regTime,typeHandler=com.jiangnanyidianyu.handler.Date2VarcharHandler},&ndash;&gt;-->
+<!--&lt;!&ndash;           </if>&ndash;&gt;-->
+
+<!--&lt;!&ndash;           <if test="username!=null">&ndash;&gt;-->
+<!--&lt;!&ndash;               username = #{username},&ndash;&gt;-->
+<!--&lt;!&ndash;           </if>&ndash;&gt;-->
+
+<!--&lt;!&ndash;           <if test="pwd!=null and pwd!=''">&ndash;&gt;-->
+<!--&lt;!&ndash;               pwd = #{pwd},&ndash;&gt;-->
+<!--&lt;!&ndash;           </if>&ndash;&gt;-->
+
+<!--&lt;!&ndash;           <if test="favorites!=null">&ndash;&gt;-->
+<!--&lt;!&ndash;               favorites = #{favorites,typeHandler=com.jiangnanyidianyu.handler.List2VarcharHandler},&ndash;&gt;-->
+<!--&lt;!&ndash;           </if>&ndash;&gt;-->
+<!--&lt;!&ndash;       </set>&ndash;&gt;-->
+<!--&lt;!&ndash;        where userid = #{userid}&ndash;&gt;-->
+<!--&lt;!&ndash;    </update>&ndash;&gt;-->
+<!--</mapper>-->
+

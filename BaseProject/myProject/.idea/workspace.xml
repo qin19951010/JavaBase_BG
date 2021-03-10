@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e365a4c6-65e3-43b3-a786-ad2024c6f33b" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Kotlin Class" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>setDateFormat</find>
+      <find>javaType</find>
+      <find>personNode</find>
+    </findStrings>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutGeneric/GenericHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutGeneric/Automobile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutGeneric/Holder1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutReflection/TestReflection01.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutReflection/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutReflection/Constructors.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/代理模式/静态代理/Marry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/代理模式/静态代理/You.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/代理模式/静态代理/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/代理模式/静态代理/MarryCompanyProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutReflection/Apple.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/Employee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/ReadObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/Teacher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/ReadTeacher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/WriteTeacher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/WriteObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/Externalizable/ExPerson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/Outer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/Other.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/成员内部类/Other.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/静态内部类/Outer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/静态内部类/Other.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/局部内部类/Outer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/匿名内部类/IAnimal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/匿名内部类/JustDo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/匿名内部类/Outer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/匿名内部类/myOuter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/集合.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/List相关.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/Set相关.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/TreeSet两种排序比较.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/MyComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/TreeSet自定义对象排序.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/Dog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/Set性能测试.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/枚举/Data.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/枚举/Response.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/枚举/BaseResponse.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/枚举/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/枚举/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/枚举/MyFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/枚举/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化2/Main.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\javatools\repository" />
+        <option name="mavenHome" value="D:\apache-maven-3.5.2-bin\apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.5.2-bin\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="698" />
+  </component>
+  <component name="ProjectId" id="1mioX41Wpf2p5zu8qNIeuykMYFq" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="java-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="jiangnanyidianyu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://F:/江南一点雨/myProject/src/main/java/com/jiangnanyidianyu/AboutGeneric/Automobile.java" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes/com/jiangnanyidianyu/HTTP" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\江南一点雨\myProject\target\classes\com\jiangnanyidianyu\HTTP" />
+      <recent name="F:\江南一点雨\myProject\src\main\java\com\jiangnanyidianyu" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jiangnanyidianyu.深拷贝和浅拷贝.深拷贝" />
+      <recent name="com.jiangnanyidianyu.代理模式.JDK动态代理" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Socket_Demo">
+    <configuration name="B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jiangnanyidianyu.关键字.B" />
+      <module name="myProject" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiangnanyidianyu.关键字.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Socket_Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jiangnanyidianyu.HTTP.Socket_Demo" />
+      <module name="myProject" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiangnanyidianyu.HTTP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashMapTraverse.Test06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiangnanyidianyu.集合类bj.Map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jiangnanyidianyu.集合类bj.Map" />
+      <option name="MAIN_CLASS_NAME" value="com.jiangnanyidianyu.集合类bj.Map.HashMapTraverse" />
+      <option name="METHOD_NAME" value="Test06" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashMapTraverse.Test07" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiangnanyidianyu.集合类bj.Map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jiangnanyidianyu.集合类bj.Map" />
+      <option name="MAIN_CLASS_NAME" value="com.jiangnanyidianyu.集合类bj.Map.HashMapTraverse" />
+      <option name="METHOD_NAME" value="Test07" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POI.POI_07" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiangnanyidianyu.POI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jiangnanyidianyu.POI" />
+      <option name="MAIN_CLASS_NAME" value="com.jiangnanyidianyu.POI.POI" />
+      <option name="METHOD_NAME" value="POI_07" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.B" />
+      <item itemvalue="JUnit.HashMapTraverse.Test06" />
+      <item itemvalue="JUnit.HashMapTraverse.Test07" />
+      <item itemvalue="JUnit.POI.POI_07" />
+      <item itemvalue="Application.Socket_Demo" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Socket_Demo" />
+        <item itemvalue="Application.B" />
+        <item itemvalue="JUnit.POI.POI_07" />
+        <item itemvalue="JUnit.HashMapTraverse.Test07" />
+        <item itemvalue="JUnit.HashMapTraverse.Test06" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e365a4c6-65e3-43b3-a786-ad2024c6f33b" name="Default" comment="" />
+      <created>1592904480397</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592904480397</updated>
+      <workItem from="1592904491150" duration="848000" />
+      <workItem from="1593414579807" duration="266000" />
+      <workItem from="1593414904007" duration="594000" />
+      <workItem from="1594715519767" duration="1470000" />
+      <workItem from="1595385392782" duration="5267000" />
+      <workItem from="1596004090156" duration="2857000" />
+      <workItem from="1596095918644" duration="132000" />
+      <workItem from="1600409729101" duration="1281000" />
+      <workItem from="1602213751004" duration="1239000" />
+      <workItem from="1602309484357" duration="18413000" />
+      <workItem from="1602556423760" duration="18869000" />
+      <workItem from="1602819786989" duration="728000" />
+      <workItem from="1602827369145" duration="29000" />
+      <workItem from="1603087222645" duration="6983000" />
+      <workItem from="1603245916060" duration="186000" />
+      <workItem from="1608884004836" duration="5624000" />
+      <workItem from="1609124573014" duration="3169000" />
+      <workItem from="1609206769712" duration="7259000" />
+      <workItem from="1609296629946" duration="2712000" />
+      <workItem from="1609985810863" duration="1273000" />
+      <workItem from="1610071493106" duration="1818000" />
+      <workItem from="1610328918478" duration="7552000" />
+      <workItem from="1610352572069" duration="32000" />
+      <workItem from="1610356289541" duration="25000" />
+      <workItem from="1610415463754" duration="2577000" />
+      <workItem from="1610431481361" duration="1846000" />
+      <workItem from="1610502101632" duration="13265000" />
+      <workItem from="1610525861904" duration="21000" />
+      <workItem from="1610586755201" duration="2548000" />
+      <workItem from="1610615047465" duration="560000" />
+      <workItem from="1610673825374" duration="13821000" />
+      <workItem from="1610699026506" duration="1195000" />
+      <workItem from="1610934347703" duration="779000" />
+      <workItem from="1610950138953" duration="647000" />
+      <workItem from="1610951957207" duration="141000" />
+      <workItem from="1611715617782" duration="8068000" />
+      <workItem from="1611805780246" duration="12923000" />
+      <workItem from="1612230294025" duration="287000" />
+      <workItem from="1612231249886" duration="601000" />
+      <workItem from="1612248605945" duration="599000" />
+      <workItem from="1612253882622" duration="365000" />
+      <workItem from="1612423163153" duration="605000" />
+      <workItem from="1612495858336" duration="602000" />
+      <workItem from="1612683807668" duration="608000" />
+      <workItem from="1613963215567" duration="2735000" />
+      <workItem from="1613975818859" duration="31989000" />
+      <workItem from="1615192884436" duration="1207000" />
+      <workItem from="1615270353762" duration="693000" />
+      <workItem from="1615272113047" duration="134000" />
+      <workItem from="1615340687479" duration="17383000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="AppTest - 2020.06.23 at 17h 32m 09s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="77926000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32954547" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5015129" side_tool="true" weight="0.375" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="leetcode" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.44155845" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.28084415" />
+      <window_info anchor="right" id="Word Book" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2579425" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.26136363" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.13149351" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.25324675" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/ReadTeacher.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/Externalizable/ExPerson.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/Externalizable/ExPerson.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="20" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="21" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="2174" column="26" selection-start-line="2174" selection-start-column="26" selection-end-line="2174" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/代理模式/静态代理/Marry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutReflection/Constructors.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutReflection/Student.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutReflection/TestReflection01.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/代理模式/静态代理/MarryCompanyProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/代理模式/静态代理/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/代理模式/静态代理/You.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutReflection/Apple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/junit.framework">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>junit.framework</OriginalElement>
+          <nodes>
+            <node x="" y="">junit.framework.Protectable</node>
+            <node x="" y="">junit.framework.Test</node>
+            <node x="" y="">junit.framework.JUnit4TestAdapter</node>
+            <node x="" y="">junit.framework.TestFailure</node>
+            <node x="" y="">junit.framework.ComparisonCompactor</node>
+            <node x="" y="">junit.framework.AssertionFailedError</node>
+            <node x="" y="">junit.framework.JUnit4TestCaseFacade</node>
+            <node x="" y="">junit.framework.TestSuite</node>
+            <node x="" y="">junit.framework.JUnit4TestAdapterCache</node>
+            <node x="" y="">junit.framework.Assert</node>
+            <node x="" y="">junit.framework.TestListener</node>
+            <node x="" y="">junit.framework.TestResult</node>
+            <node x="" y="">junit.framework.TestCase</node>
+            <node x="" y="">junit.framework.package-info</node>
+            <node x="" y="">junit.framework.ComparisonFailure</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.1055776892430278" x="470.0" y="213.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/Employee.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutJson/TestJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/WriteTeacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/ReadTeacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/ReadObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/WriteObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/ObjectInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="423" column="63" selection-start-line="423" selection-start-column="48" selection-end-line="423" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/成员内部类/Other.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/静态内部类.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/成员内部类/Outer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/静态内部类/Other.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/静态内部类/Outer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/局部内部类/Outer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1659">
+          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/集合.md" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/Externalizable/ExPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/List相关.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/Set相关.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/TreeSet基本数据类型排序.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/MyComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/TreeSet自定义对象排序.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/Set性能测试.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/枚举/BaseResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化2/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="20" />
+          <folding>
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化2/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化2/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="10" selection-start-line="10" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
+            <element signature="e#1523#1524#0" expanded="true" />
+            <element signature="e#1571#1572#0" expanded="true" />
+            <element signature="e#1611#1612#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1707#1708#0" expanded="true" />
+            <element signature="e#1737#1738#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1793#1794#0" expanded="true" />
+            <element signature="e#1831#1832#0" expanded="true" />
+            <element signature="e#1863#1864#0" expanded="true" />
+            <element signature="e#1893#1894#0" expanded="true" />
+            <element signature="e#1922#1923#0" expanded="true" />
+            <element signature="e#1963#1964#0" expanded="true" />
+            <element signature="e#1999#2000#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化2/MyFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.1/jackson-databind-2.9.1.jar!/com/fasterxml/jackson/databind/node/ObjectNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.1/jackson-databind-2.9.1-sources.jar!/com/fasterxml/jackson/databind/node/ObjectNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/序列化2/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1195">
+          <caret line="342" column="1" lean-forward="true" selection-start-line="342" selection-start-column="1" selection-end-line="342" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Main#0" />
+            <element signature="e#2746#2834#0" />
+            <element signature="method#test3#0;class#Main#0" />
+            <element signature="method#test5#0;class#Main#0" />
+            <element signature="method#test6#0;class#Main#0" />
+            <element signature="class#People#0;class#Main#0" />
+            <element signature="docComment;method#test7#0;class#Main#0" />
+            <element signature="method#test7#0;class#Main#0" />
+            <element signature="method#test8#0;class#Main#0" />
+            <element signature="class#CustomSerializer#0;class#Main#0" />
+            <element signature="method#serialize#0;class#CustomSerializer#0;class#Main#0" />
+            <element signature="n#!!doc;n#CustomDeserializer#0;n#Main#0" />
+            <element signature="class#CustomDeserializer#0;class#Main#0" />
+            <element signature="method#deserialize#0;class#CustomDeserializer#0;class#Main#0" />
+            <element signature="e#10277#10300#0" />
+            <element signature="method#test9#0;class#Main#0" />
+            <element signature="e#11181#11205#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutGeneric/Automobile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutGeneric/Holder1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/匿名内部类/IAnimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/匿名内部类/JustDo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/匿名内部类/Outer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/AboutInner/匿名内部类/myOuter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="method#justDo#0;class#myOuter#0" />
+            <element signature="e#252#380#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-666">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jiangnanyidianyu/集合类/Dog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

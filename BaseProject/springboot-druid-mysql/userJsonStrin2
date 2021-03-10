@@ -1,0 +1,15 @@
+[ {
+  "userid" : "09902",
+  "username" : "Qzl_QAQ",
+  "pwd" : "156456dsad",
+  "favorites" : [ "读书", "看报", "冥想" ],
+  "regTime" : 0,
+  "mark" : "这是一条被修改的数据"
+}, {
+  "userid" : "09904",
+  "username" : "Qinnn43149",
+  "pwd" : "19542",
+  "favorites" : [ "读书", "看报", "冥想" ],
+  "regTime" : 0,
+  "mark" : "测试数据29673"
+} ]

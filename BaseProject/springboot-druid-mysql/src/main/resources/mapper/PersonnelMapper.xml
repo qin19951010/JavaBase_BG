@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jiangnanyidianyu.dao.RoleDao">
+    <!-- 1.普通方式 -->
+    <!--<resultMap id="PersonWithRole" type="com.jiangnanyidianyu.model.Personnel">-->
+        <!--<id property="id" column="id"/>-->
+        <!--<result column="username" property="username"/>-->
+        <!--<result column="password" property="password"/>-->
+        <!--<collection property="roles" ofType="com.jiangnanyidianyu.model.Role">-->
+            <!--<id property="id" column="rid"/>-->
+            <!--<result property="name" column="rname"/>-->
+            <!--<result property="nameZh" column="rnameZH"/>-->
+        <!--</collection>-->
+    <!--</resultMap>-->
+
+    <!--<select id="getUserById" resultMap="UserWithRole">-->
+      <!--SELECT u.*,r.`id` AS rid,r.`name` AS rname,r.`nameZh` AS rnameZh-->
+      <!--FROM USER u,role r,user_role ur-->
+      <!--WHERE u.`id`=ur.`uid` AND ur.`rid`=r.`id` AND u.`id`=#{id}-->
+    <!--</select>-->
+
+    <!-- 2.懒加载方式 -->
+    <resultMap id="UserWithRole" type="com.jiangnanyidianyu.model.Personnel">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <collection property="roles" select="com.jiangnanyidianyu.dao.RoleDao.getRolesByUid" column="id" fetchType="lazy">
+        </collection>
+    </resultMap>
+    
+    <select id="getPersonnelById" resultMap="UserWithRole">
+        select * from personnel where id =#{id}
+    </select>
+    <select id="getRolesByUid" resultType="com.jiangnanyidianyu.model.Role">
+      SELECT r.*
+      FROM role r,user_role ur
+      WHERE r.`id`=ur.`rid` AND ur.`uid`=#{id}
+    </select>
+</mapper>

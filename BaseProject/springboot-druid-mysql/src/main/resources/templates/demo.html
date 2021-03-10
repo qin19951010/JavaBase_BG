@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="/plug-ins/EditorMD/css/editormd.min.css" />
+<script src="/plug-ins/JQuery/jquery-3.3.1.min.js"></script>
+<script src="/plug-ins/EditorMD/editormd.min.js"></script>
+<!doctype html>
+<!--<script src="@{/plug-ins/JQuery/jquery-3.3.1.min.js}"></script>-->
+<!--<script src="@{/plug-ins/EditorMD/editormd.min.js}"></script>-->
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta charset="utf-8">
+		<title>EditorMD</title>
+		<link rel="stylesheet" type="text/css" th:href="@{/plug-ins/EditorMD/lib/codemirror/codemirror.min.css}" />
+		<script type="text/javascript" th:src="@{/plug-ins/JQuery/jquery-3.3.1.min.js}"></script>
+		<script type="text/javascript" th:src="@{/plug-ins/EditorMD/editormd.min.js}"></script>
+		<link rel="stylesheet" type="text/css" th:href="@{/plug-ins/EditorMD/css/editormd.css}"/>
+	</head>
+
+	<body>
+
+        <form method="post" th:action="@{/addMd}" th:object="${md}">
+            <div id="editormd">
+                <textarea name="content" th:field="*{content}" style="display:none;" id="mdcontent"></textarea>
+            </div>
+			<input type="hidden" name="id" th:value="*{id}">
+            <div>
+                <input type="submit" value="保存">
+            </div>
+        </form>
+		<a th:href="@{/showMdAdd}">新增md</a>
+
+		<script>
+
+			$(function() {
+				var editor = editormd("editormd", {
+					path: 'plug-ins/EditorMD/lib/'
+				});
+
+				/*
+				// or
+				var editor = editormd({
+				    id   : "editormd",
+				    path : "../lib/"
+				});
+				*/
+			});
+
+			
+		</script>
+	</body>
+
+</html>

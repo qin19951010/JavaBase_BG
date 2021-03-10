@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jiangnanyidianyu.dao.BookDao">
+
+    <!--<resultMap id="BookWithAuthor" type="com.jiangnanyidianyu.bean.Book">-->
+
+        <!--<id column="id" property="id"/>-->
+        <!--<result column="name" property="name"/>-->
+        <!--<association property="author" javaType="com.jiangnanyidianyu.bean.Author">-->
+            <!--<id column="id" property="id"/>-->
+            <!--<result column="aname" property="name"/>-->
+            <!--<result column="aage" property="age"/>-->
+        <!--</association>-->
+    <!--</resultMap>-->
+
+    <!--
+        association节点描述一对一关系
+     -->
+    <!--<select id="getBookById" resultMap="BookWithAuthor">-->
+    <!--SELECT b.*,a.`age` AS aage,a.`id` AS aid,a.`name` AS aname-->
+        <!--FROM book b,author a-->
+    <!--WHERE b.`aid`=a.`id` AND b.`id`=#{id}-->
+    <!--</select>-->
+
+    <!-- 优化mapper,把相同的部分抽取出来,做成一个公共模板,被其他resultMap继承 -->
+    <resultMap id="BaseResultMap" type="com.jiangnanyidianyu.bean.Book">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+    </resultMap>
+    <resultMap id="BookWithAuthor" type="com.jiangnanyidianyu.bean.Book" extends="BaseResultMap">
+        <association property="author" javaType="com.jiangnanyidianyu.bean.Author">
+            <id column="aid" property="id"/>
+            <result column="aname" property="name"/>
+            <result column="aage" property="age"/>
+            <result column="hobbys" property="hobbys" typeHandler="com.jiangnanyidianyu.handler.List2VarcharHandler"/>
+        </association>
+    </resultMap>
+
+    <select id="getBookById" resultMap="BookWithAuthor">
+        SELECT b.id,b.name,b.aid,a.age AS aage,a.id AS aid,a.name AS aname,a.hobbys
+        FROM book b,author a
+        WHERE b.`aid`=a.`id` AND a.`id`=#{id}
+    </select>
+
+    <!--
+        懒加载:先查询Book,不查询author,当用户第一次调用了book中的author属性后,再去查询author
+    -->
+    <resultMap id="BaseResultMap2" type="com.jiangnanyidianyu.bean.Book">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+    </resultMap>
+
+    <!--
+        定义 association 的时候,不直接指定映射的字段,而是指定要执行的方法,
+        通过 select 字段来指定，column 表示执行方法时传递的参数字段
+    -->
+    <resultMap id="BookWithAuthor2" type="com.jiangnanyidianyu.bean.Book" extends="BaseResultMap">
+        <association
+            property="author" javaType="com.jiangnanyidianyu.bean.Author"
+            select="com.jiangnanyidianyu.dao.BookDao.getAuthorById"
+            column="aid"
+            fetchType="lazy"/>
+    </resultMap>
+
+    <select id="getBookById2" resultMap="BookWithAuthor2">
+        select * from book where id=#{id};
+    </select>
+
+    <select id="getAuthorById" resultType="com.jiangnanyidianyu.bean.Author">
+        select * from author where id=#{aid};
+    </select>
+
+    <!-- 根据 -->
+<!--    <select id="">-->
+
+<!--    </select>-->
+</mapper>

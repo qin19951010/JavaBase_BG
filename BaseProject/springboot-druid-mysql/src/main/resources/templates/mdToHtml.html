@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="plug-ins/EditorMD/css/editormd.min.css" />
+<div id="test-markdown-view">
+    <!-- Server-side output Markdown text -->
+    <textarea style="display:none;">### Hello world!</textarea>         
+</div>
+<script src="plug-ins/JQuery/jquery-3.3.1.min.js"></script>
+<script src="plug-ins/EditorMD/editormd.min.js"></script>
+<script src="plug-ins/EditorMD/lib/marked.min.js"></script>
+<script src="plug-ins/EditorMD/lib/prettify.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+	    var testView = editormd.markdownToHTML("test-markdown-view", {
+             markdown : "[TOC]\n### Hello world!\n## Heading 2", // Also, you can dynamic set Markdown text
+            // htmlDecode : true,  // Enable / disable HTML tag encode.
+            // htmlDecode : "style,script,iframe",  // Note: If enabled, you should filter some dangerous HTML tags for website security.
+        });
+    });
+    // $('textarea').val('这是测试内容');
+    
+</script> 
+
+<script>
+    $.ajax({
+        url: "txt.txt",
+        success: function(data, status) {
+            console.log(arguments)
+            console.log(data)
+        },
+        error: function(data, status) {
+            console.log(arguments)
+        }
+    });
+
+    /**/
+
+    function readTxt() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("get", "txt.txt", true);
+        xhr.send();
+        xhr.onreadystatechange = function() {
+            if(xhr.readyState == 4 && xhr.status == 200) {
+                console.log(xhr);
+                console.log(xhr.responseText);
+            } else if(xhr.status == 404) {
+                console.log(xhr.status);
+            }
+        };
+    }
+    readTxt()
+</script>

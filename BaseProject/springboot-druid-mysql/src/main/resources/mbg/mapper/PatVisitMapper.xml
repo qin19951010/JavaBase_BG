@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiangnanyidianyu.mbg.mapper.PatVisitMapper">
+  <resultMap id="BaseResultMap" type="com.jiangnanyidianyu.mbg.model.PatVisit">
+    <id column="PATIENT_ID" jdbcType="VARCHAR" property="patientId" />
+    <id column="VISIT_ID" jdbcType="VARCHAR" property="visitId" />
+    <result column="INP_NO" jdbcType="VARCHAR" property="inpNo" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="DEPT_ADMISSION_TO" jdbcType="VARCHAR" property="deptAdmissionTo" />
+    <result column="ADMISSION_DATE_TIME" jdbcType="TIMESTAMP" property="admissionDateTime" />
+    <result column="DEPT_DISCHARGE_FROM" jdbcType="VARCHAR" property="deptDischargeFrom" />
+    <result column="DISCHARGE_DATE_TIME" jdbcType="TIMESTAMP" property="dischargeDateTime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    PATIENT_ID, VISIT_ID, INP_NO, NAME, DEPT_ADMISSION_TO, ADMISSION_DATE_TIME, DEPT_DISCHARGE_FROM,
+    DISCHARGE_DATE_TIME
+  </sql>
+  <select id="selectByExample" parameterType="com.jiangnanyidianyu.mbg.model.PatVisitExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from pat_visit
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from pat_visit
+    where PATIENT_ID = #{patientId,jdbcType=VARCHAR}
+      and VISIT_ID = #{visitId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from pat_visit
+    where PATIENT_ID = #{patientId,jdbcType=VARCHAR}
+      and VISIT_ID = #{visitId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.jiangnanyidianyu.mbg.model.PatVisitExample">
+    delete from pat_visit
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.jiangnanyidianyu.mbg.model.PatVisit">
+    insert into pat_visit (PATIENT_ID, VISIT_ID, INP_NO,
+      NAME, DEPT_ADMISSION_TO, ADMISSION_DATE_TIME,
+      DEPT_DISCHARGE_FROM, DISCHARGE_DATE_TIME)
+    values (#{patientId,jdbcType=VARCHAR}, #{visitId,jdbcType=VARCHAR}, #{inpNo,jdbcType=VARCHAR},
+      #{name,jdbcType=VARCHAR}, #{deptAdmissionTo,jdbcType=VARCHAR}, #{admissionDateTime,jdbcType=TIMESTAMP},
+      #{deptDischargeFrom,jdbcType=VARCHAR}, #{dischargeDateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.jiangnanyidianyu.mbg.model.PatVisit">
+    insert into pat_visit
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="patientId != null">
+        PATIENT_ID,
+      </if>
+      <if test="visitId != null">
+        VISIT_ID,
+      </if>
+      <if test="inpNo != null">
+        INP_NO,
+      </if>
+      <if test="name != null">
+        NAME,
+      </if>
+      <if test="deptAdmissionTo != null">
+        DEPT_ADMISSION_TO,
+      </if>
+      <if test="admissionDateTime != null">
+        ADMISSION_DATE_TIME,
+      </if>
+      <if test="deptDischargeFrom != null">
+        DEPT_DISCHARGE_FROM,
+      </if>
+      <if test="dischargeDateTime != null">
+        DISCHARGE_DATE_TIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="patientId != null">
+        #{patientId,jdbcType=VARCHAR},
+      </if>
+      <if test="visitId != null">
+        #{visitId,jdbcType=VARCHAR},
+      </if>
+      <if test="inpNo != null">
+        #{inpNo,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="deptAdmissionTo != null">
+        #{deptAdmissionTo,jdbcType=VARCHAR},
+      </if>
+      <if test="admissionDateTime != null">
+        #{admissionDateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deptDischargeFrom != null">
+        #{deptDischargeFrom,jdbcType=VARCHAR},
+      </if>
+      <if test="dischargeDateTime != null">
+        #{dischargeDateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.jiangnanyidianyu.mbg.model.PatVisitExample" resultType="java.lang.Long">
+    select count(*) from pat_visit
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update pat_visit
+    <set>
+      <if test="record.patientId != null">
+        PATIENT_ID = #{record.patientId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.visitId != null">
+        VISIT_ID = #{record.visitId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.inpNo != null">
+        INP_NO = #{record.inpNo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.name != null">
+        NAME = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.deptAdmissionTo != null">
+        DEPT_ADMISSION_TO = #{record.deptAdmissionTo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.admissionDateTime != null">
+        ADMISSION_DATE_TIME = #{record.admissionDateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.deptDischargeFrom != null">
+        DEPT_DISCHARGE_FROM = #{record.deptDischargeFrom,jdbcType=VARCHAR},
+      </if>
+      <if test="record.dischargeDateTime != null">
+        DISCHARGE_DATE_TIME = #{record.dischargeDateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update pat_visit
+    set PATIENT_ID = #{record.patientId,jdbcType=VARCHAR},
+      VISIT_ID = #{record.visitId,jdbcType=VARCHAR},
+      INP_NO = #{record.inpNo,jdbcType=VARCHAR},
+      NAME = #{record.name,jdbcType=VARCHAR},
+      DEPT_ADMISSION_TO = #{record.deptAdmissionTo,jdbcType=VARCHAR},
+      ADMISSION_DATE_TIME = #{record.admissionDateTime,jdbcType=TIMESTAMP},
+      DEPT_DISCHARGE_FROM = #{record.deptDischargeFrom,jdbcType=VARCHAR},
+      DISCHARGE_DATE_TIME = #{record.dischargeDateTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.jiangnanyidianyu.mbg.model.PatVisit">
+    update pat_visit
+    <set>
+      <if test="inpNo != null">
+        INP_NO = #{inpNo,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        NAME = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="deptAdmissionTo != null">
+        DEPT_ADMISSION_TO = #{deptAdmissionTo,jdbcType=VARCHAR},
+      </if>
+      <if test="admissionDateTime != null">
+        ADMISSION_DATE_TIME = #{admissionDateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deptDischargeFrom != null">
+        DEPT_DISCHARGE_FROM = #{deptDischargeFrom,jdbcType=VARCHAR},
+      </if>
+      <if test="dischargeDateTime != null">
+        DISCHARGE_DATE_TIME = #{dischargeDateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where PATIENT_ID = #{patientId,jdbcType=VARCHAR}
+      and VISIT_ID = #{visitId,jdbcType=VARCHAR}
+  </update>
+
+  <update id="updateByInpNo" parameterType="com.jiangnanyidianyu.mbg.model.PatVisit">
+    update pat_visit
+    <set>
+      <if test="name != null">
+        NAME = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="deptAdmissionTo != null">
+        DEPT_ADMISSION_TO = #{deptAdmissionTo,jdbcType=VARCHAR},
+      </if>
+      <if test="admissionDateTime != null">
+        ADMISSION_DATE_TIME = #{admissionDateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deptDischargeFrom != null">
+        DEPT_DISCHARGE_FROM = #{deptDischargeFrom,jdbcType=VARCHAR},
+      </if>
+      <if test="dischargeDateTime != null">
+        DISCHARGE_DATE_TIME = #{dischargeDateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where INP_NO = #{inpNo}
+  </update>
+
+  <update id="updateByPrimaryKey" parameterType="com.jiangnanyidianyu.mbg.model.PatVisit">
+    update pat_visit
+    set INP_NO = #{inpNo,jdbcType=VARCHAR},
+      NAME = #{name,jdbcType=VARCHAR},
+      DEPT_ADMISSION_TO = #{deptAdmissionTo,jdbcType=VARCHAR},
+      ADMISSION_DATE_TIME = #{admissionDateTime,jdbcType=TIMESTAMP},
+      DEPT_DISCHARGE_FROM = #{deptDischargeFrom,jdbcType=VARCHAR},
+      DISCHARGE_DATE_TIME = #{dischargeDateTime,jdbcType=TIMESTAMP}
+    where PATIENT_ID = #{patientId,jdbcType=VARCHAR}
+      and VISIT_ID = #{visitId,jdbcType=VARCHAR}
+  </update>
+</mapper>

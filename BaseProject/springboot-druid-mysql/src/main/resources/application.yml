@@ -1,0 +1,82 @@
+#JDBC 相关的配置spring:
+spring:
+  datasource:
+    username: root
+    password: qin19950819..
+    # 使用com.mysql.cj.jdbc.Driver驱动需要设置 serverTimezone
+    url: jdbc:mysql://127.0.0.1:3306/wxapp?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    hikari:
+#      schema:
+#        - classpath:department.sql
+#    initialization-mode: always
+
+    druid:
+      #Drui数据源其他配置
+      # 初始化连接池个数
+      initialSize: 5
+      # 最大连接池个数
+      maxActive: 20
+      # 配置获取连接等待超时的时间，单位毫秒，缺省启用公平锁，并发效率会有所下降
+      maxWait: 60000
+      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      minEvictableIdleTimeMillis: 300000
+      # 用来检测连接是否有效的sql，要求是一个查询语句。
+      # 如果validationQuery为null，testOnBorrow、testOnReturn、testWhileIdle都不会起作用
+      validationQuery: SELECT 1 FROM DUAL
+      # 建议配置为true，不影响性能，并且保证安全性。
+      # 申请连接的时候检测，如果空闲时间大于timeBetweenEvictionRunsMillis，执行validationQuery检测连接是否有效。
+      testWhileIdle: true
+      # 申请连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能
+      testOnBorrow: false
+      # 归还连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能
+      testOnReturn: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      # 通过别名的方式配置扩展插件，多个英文逗号分隔，常用的插件有：
+      # 监控统计用的filter:stat
+      # 日志用的filter:log4j
+      # 防御sql注入的filter:wall
+      filters: stat,wall,log4j
+      # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      # 合并多个DruidDataSource的监控数据
+      useGlobalDataSourceStat: true
+
+  thymeleaf:
+    cache: false
+    check-template: true
+    check-template-location: true
+    #开启MVC视图解析
+    enabled: true
+    encoding: utf-8
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+
+mybatis:
+  #映射文件*.xml的位置
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath:mbg/mapper/*.xml
+  #扫描别名，一定要与@Alias注解连用
+  #这个配置不开启,(不然需要写全包名)
+  #扫描包的时候,默认批量给对象定义别名,默认别名是类名小写
+  type-aliases-package: com.jiangnanyidianyu.bean
+  #开启驼峰映射
+  configuration:
+    map-underscore-to-camel-case: true
+    #开启懒加载
+    lazy-loading-enabled: true
+    aggressive-lazy-loading: false
+#    配置全局类型转换器
+#  type-handlers-package: com.jiangnanyidianyu.handler
+#typehandler可以用于对数据入库、查询结果做一些特殊转换处理，如日期格式转化、枚举转化、数据类型、转化等。
+logging:
+    level:
+        com.jiangnanyidianyu.dao: DEBUG
+debug: false
+

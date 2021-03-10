@@ -1,0 +1,620 @@
+[ {
+  "userid" : "09900",
+  "username" : "Qinnnntest",
+  "pwd" : "312321dsad",
+  "favorites" : [ "读书", "看报", "冥想" ],
+  "regTime" : 0,
+  "mark" : "测试自定义类型转换器"
+}, {
+  "userid" : "09901",
+  "username" : "Qinnn24391",
+  "pwd" : "65757",
+  "favorites" : [ "读书", "看报", "冥想" ],
+  "regTime" : 0,
+  "mark" : "测试数据33304"
+}, {
+  "userid" : "09902",
+  "username" : "Qzl_QAQ",
+  "pwd" : "156456dsad",
+  "favorites" : [ "读书", "看报", "冥想" ],
+  "regTime" : 0,
+  "mark" : "这是一条被修改的数据"
+}, {
+  "userid" : "09904",
+  "username" : "Qinnn43149",
+  "pwd" : "19542",
+  "favorites" : [ "读书", "看报", "冥想" ],
+  "regTime" : 0,
+  "mark" : "测试数据29673"
+}, {
+  "userid" : "19950819",
+  "username" : "Qinnn",
+  "pwd" : "dasdasd4a5sda",
+  "favorites" : [ "吃饭", "睡觉", "打豆豆" ],
+  "regTime" : 1603681029950,
+  "mark" : "测试TypeHandler处理器 java中date插入转为varchar,查询显示date"
+}, {
+  "userid" : "3b041f4e-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn95790",
+  "pwd" : "89786",
+  "regTime" : 0,
+  "mark" : "测试数据16815"
+}, {
+  "userid" : "3b05113f-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn47101",
+  "pwd" : "00610",
+  "regTime" : 0,
+  "mark" : "测试数据86507"
+}, {
+  "userid" : "3b0631e6-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn27034",
+  "pwd" : "92188",
+  "regTime" : 0,
+  "mark" : "测试数据93979"
+}, {
+  "userid" : "3b0720ce-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn48107",
+  "pwd" : "75644",
+  "regTime" : 0,
+  "mark" : "测试数据20419"
+}, {
+  "userid" : "3b07ffb4-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn35827",
+  "pwd" : "65730",
+  "regTime" : 0,
+  "mark" : "测试数据53805"
+}, {
+  "userid" : "3b08ef43-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn38159",
+  "pwd" : "79999",
+  "regTime" : 0,
+  "mark" : "测试数据85217"
+}, {
+  "userid" : "3b09aec9-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn31918",
+  "pwd" : "42375",
+  "regTime" : 0,
+  "mark" : "测试数据76616"
+}, {
+  "userid" : "3b0a79f0-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn07792",
+  "pwd" : "78932",
+  "regTime" : 0,
+  "mark" : "测试数据10758"
+}, {
+  "userid" : "3b0b5f01-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn41582",
+  "pwd" : "85995",
+  "regTime" : 0,
+  "mark" : "测试数据85213"
+}, {
+  "userid" : "3b0c5484-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn62873",
+  "pwd" : "59269",
+  "regTime" : 0,
+  "mark" : "测试数据33620"
+}, {
+  "userid" : "3b0d4e87-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn71088",
+  "pwd" : "80808",
+  "regTime" : 0,
+  "mark" : "测试数据80513"
+}, {
+  "userid" : "3b0e7adf-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn36644",
+  "pwd" : "98822",
+  "regTime" : 0,
+  "mark" : "测试数据84802"
+}, {
+  "userid" : "3b0f9900-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn04628",
+  "pwd" : "88524",
+  "regTime" : 0,
+  "mark" : "测试数据41810"
+}, {
+  "userid" : "3b107c52-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn63644",
+  "pwd" : "56599",
+  "regTime" : 0,
+  "mark" : "测试数据70253"
+}, {
+  "userid" : "3b11647c-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn23822",
+  "pwd" : "28226",
+  "regTime" : 0,
+  "mark" : "测试数据53839"
+}, {
+  "userid" : "3b124ab1-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn39048",
+  "pwd" : "96886",
+  "regTime" : 0,
+  "mark" : "测试数据89160"
+}, {
+  "userid" : "3b132245-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn03063",
+  "pwd" : "15312",
+  "regTime" : 0,
+  "mark" : "测试数据44441"
+}, {
+  "userid" : "3b140365-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn12903",
+  "pwd" : "38324",
+  "regTime" : 0,
+  "mark" : "测试数据70196"
+}, {
+  "userid" : "3b14db69-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn79298",
+  "pwd" : "88843",
+  "regTime" : 0,
+  "mark" : "测试数据31174"
+}, {
+  "userid" : "3b15caa2-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn31549",
+  "pwd" : "15391",
+  "regTime" : 0,
+  "mark" : "测试数据75644"
+}, {
+  "userid" : "3b16aa7b-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn42860",
+  "pwd" : "47135",
+  "regTime" : 0,
+  "mark" : "测试数据94791"
+}, {
+  "userid" : "3b1782cd-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn80325",
+  "pwd" : "49899",
+  "regTime" : 0,
+  "mark" : "测试数据21868"
+}, {
+  "userid" : "3b187115-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn94854",
+  "pwd" : "84132",
+  "regTime" : 0,
+  "mark" : "测试数据03422"
+}, {
+  "userid" : "3b195df1-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn86777",
+  "pwd" : "56609",
+  "regTime" : 0,
+  "mark" : "测试数据85510"
+}, {
+  "userid" : "3b1a4c06-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn68570",
+  "pwd" : "76296",
+  "regTime" : 0,
+  "mark" : "测试数据21385"
+}, {
+  "userid" : "3b1b2a78-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn19524",
+  "pwd" : "27901",
+  "regTime" : 0,
+  "mark" : "测试数据83557"
+}, {
+  "userid" : "3b1c057a-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn83147",
+  "pwd" : "65995",
+  "regTime" : 0,
+  "mark" : "测试数据69207"
+}, {
+  "userid" : "3b1ccb6f-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn88647",
+  "pwd" : "33657",
+  "regTime" : 0,
+  "mark" : "测试数据69019"
+}, {
+  "userid" : "3b1e3637-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn31546",
+  "pwd" : "93658",
+  "regTime" : 0,
+  "mark" : "测试数据00590"
+}, {
+  "userid" : "3b1ee9bd-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn13952",
+  "pwd" : "81977",
+  "regTime" : 0,
+  "mark" : "测试数据31310"
+}, {
+  "userid" : "3b1fad96-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn33958",
+  "pwd" : "89736",
+  "regTime" : 0,
+  "mark" : "测试数据46495"
+}, {
+  "userid" : "3b207365-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn06379",
+  "pwd" : "08555",
+  "regTime" : 0,
+  "mark" : "测试数据16253"
+}, {
+  "userid" : "3b21306c-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn99768",
+  "pwd" : "78992",
+  "regTime" : 0,
+  "mark" : "测试数据53493"
+}, {
+  "userid" : "3b21e2de-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn33647",
+  "pwd" : "31378",
+  "regTime" : 0,
+  "mark" : "测试数据17261"
+}, {
+  "userid" : "3b22980c-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn05022",
+  "pwd" : "64257",
+  "regTime" : 0,
+  "mark" : "测试数据91444"
+}, {
+  "userid" : "3b233e8c-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn51777",
+  "pwd" : "11687",
+  "regTime" : 0,
+  "mark" : "测试数据29189"
+}, {
+  "userid" : "3b23f6dc-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn27266",
+  "pwd" : "08724",
+  "regTime" : 0,
+  "mark" : "测试数据61504"
+}, {
+  "userid" : "3b24b17c-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn28128",
+  "pwd" : "02219",
+  "regTime" : 0,
+  "mark" : "测试数据67072"
+}, {
+  "userid" : "3b256f06-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn96725",
+  "pwd" : "93328",
+  "regTime" : 0,
+  "mark" : "测试数据83419"
+}, {
+  "userid" : "3b26302e-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn04804",
+  "pwd" : "58972",
+  "regTime" : 0,
+  "mark" : "测试数据17672"
+}, {
+  "userid" : "3b271b56-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn51517",
+  "pwd" : "78722",
+  "regTime" : 0,
+  "mark" : "测试数据76819"
+}, {
+  "userid" : "3b280111-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn41388",
+  "pwd" : "84152",
+  "regTime" : 0,
+  "mark" : "测试数据93510"
+}, {
+  "userid" : "3b28d39f-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn53605",
+  "pwd" : "17715",
+  "regTime" : 0,
+  "mark" : "测试数据49729"
+}, {
+  "userid" : "3b29ae46-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn79937",
+  "pwd" : "04479",
+  "regTime" : 0,
+  "mark" : "测试数据38929"
+}, {
+  "userid" : "3b2aa916-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn59022",
+  "pwd" : "49515",
+  "regTime" : 0,
+  "mark" : "测试数据35496"
+}, {
+  "userid" : "3b2ba35b-1435-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn41432",
+  "pwd" : "82125",
+  "regTime" : 0,
+  "mark" : "测试数据09498"
+}, {
+  "userid" : "70458",
+  "username" : "Qinnnntest002",
+  "pwd" : "312321dsad",
+  "favorites" : [ "读书", "看报", "冥想" ],
+  "regTime" : 0,
+  "mark" : "测试自定义类型转换器"
+}, {
+  "userid" : "70fba0cb-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn93290",
+  "pwd" : "70929",
+  "regTime" : 0,
+  "mark" : "测试数据67301"
+}, {
+  "userid" : "70fcbf3f-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn49427",
+  "pwd" : "12196",
+  "regTime" : 0,
+  "mark" : "测试数据40833"
+}, {
+  "userid" : "70fde9b5-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn45111",
+  "pwd" : "65608",
+  "regTime" : 0,
+  "mark" : "测试数据49124"
+}, {
+  "userid" : "70ff0d16-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn26253",
+  "pwd" : "22127",
+  "regTime" : 0,
+  "mark" : "测试数据97103"
+}, {
+  "userid" : "70ffe642-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn48273",
+  "pwd" : "67107",
+  "regTime" : 0,
+  "mark" : "测试数据78082"
+}, {
+  "userid" : "7100aecb-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn44652",
+  "pwd" : "54327",
+  "regTime" : 0,
+  "mark" : "测试数据52400"
+}, {
+  "userid" : "71018878-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn59101",
+  "pwd" : "79233",
+  "regTime" : 0,
+  "mark" : "测试数据76961"
+}, {
+  "userid" : "71024d88-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn87378",
+  "pwd" : "29609",
+  "regTime" : 0,
+  "mark" : "测试数据49883"
+}, {
+  "userid" : "71035cb0-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn17959",
+  "pwd" : "04758",
+  "regTime" : 0,
+  "mark" : "测试数据18442"
+}, {
+  "userid" : "71045880-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn07068",
+  "pwd" : "01526",
+  "regTime" : 0,
+  "mark" : "测试数据56176"
+}, {
+  "userid" : "71054fb0-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn73277",
+  "pwd" : "84321",
+  "regTime" : 0,
+  "mark" : "测试数据76495"
+}, {
+  "userid" : "71066b90-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn76490",
+  "pwd" : "16557",
+  "regTime" : 0,
+  "mark" : "测试数据64630"
+}, {
+  "userid" : "7107a131-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn74391",
+  "pwd" : "05375",
+  "regTime" : 0,
+  "mark" : "测试数据09589"
+}, {
+  "userid" : "71089313-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn90192",
+  "pwd" : "07095",
+  "regTime" : 0,
+  "mark" : "测试数据60842"
+}, {
+  "userid" : "7109ef97-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn83624",
+  "pwd" : "91215",
+  "regTime" : 0,
+  "mark" : "测试数据86790"
+}, {
+  "userid" : "710b1aed-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn27491",
+  "pwd" : "06792",
+  "regTime" : 0,
+  "mark" : "测试数据66464"
+}, {
+  "userid" : "710c0e66-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn35445",
+  "pwd" : "64118",
+  "regTime" : 0,
+  "mark" : "测试数据31337"
+}, {
+  "userid" : "710cf760-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn83835",
+  "pwd" : "19254",
+  "regTime" : 0,
+  "mark" : "测试数据22427"
+}, {
+  "userid" : "710e43fc-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn38415",
+  "pwd" : "20308",
+  "regTime" : 0,
+  "mark" : "测试数据02061"
+}, {
+  "userid" : "710f5304-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn15829",
+  "pwd" : "31597",
+  "regTime" : 0,
+  "mark" : "测试数据62371"
+}, {
+  "userid" : "71104b9a-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn91673",
+  "pwd" : "32731",
+  "regTime" : 0,
+  "mark" : "测试数据28202"
+}, {
+  "userid" : "71114818-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn15446",
+  "pwd" : "15967",
+  "regTime" : 0,
+  "mark" : "测试数据81846"
+}, {
+  "userid" : "711241e8-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn90240",
+  "pwd" : "89927",
+  "regTime" : 0,
+  "mark" : "测试数据84224"
+}, {
+  "userid" : "71134bd2-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn57097",
+  "pwd" : "60105",
+  "regTime" : 0,
+  "mark" : "测试数据67636"
+}, {
+  "userid" : "71141ba9-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn56270",
+  "pwd" : "32682",
+  "regTime" : 0,
+  "mark" : "测试数据92226"
+}, {
+  "userid" : "71150809-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn50733",
+  "pwd" : "76702",
+  "regTime" : 0,
+  "mark" : "测试数据69339"
+}, {
+  "userid" : "7115e863-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn19381",
+  "pwd" : "80291",
+  "regTime" : 0,
+  "mark" : "测试数据07698"
+}, {
+  "userid" : "7116d5f0-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn15903",
+  "pwd" : "45821",
+  "regTime" : 0,
+  "mark" : "测试数据12998"
+}, {
+  "userid" : "7117b5f2-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn42537",
+  "pwd" : "70461",
+  "regTime" : 0,
+  "mark" : "测试数据36361"
+}, {
+  "userid" : "71189c0d-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn10730",
+  "pwd" : "44165",
+  "regTime" : 0,
+  "mark" : "测试数据00940"
+}, {
+  "userid" : "711a226e-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn08421",
+  "pwd" : "58603",
+  "regTime" : 0,
+  "mark" : "测试数据53574"
+}, {
+  "userid" : "711b6547-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn56767",
+  "pwd" : "19137",
+  "regTime" : 0,
+  "mark" : "测试数据21640"
+}, {
+  "userid" : "711c544a-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn35450",
+  "pwd" : "12168",
+  "regTime" : 0,
+  "mark" : "测试数据13443"
+}, {
+  "userid" : "711d3da7-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn66945",
+  "pwd" : "86313",
+  "regTime" : 0,
+  "mark" : "测试数据59717"
+}, {
+  "userid" : "711e10f5-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn86564",
+  "pwd" : "93537",
+  "regTime" : 0,
+  "mark" : "测试数据88595"
+}, {
+  "userid" : "711eea66-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn35681",
+  "pwd" : "50030",
+  "regTime" : 0,
+  "mark" : "测试数据75447"
+}, {
+  "userid" : "711fd07c-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn21628",
+  "pwd" : "52891",
+  "regTime" : 0,
+  "mark" : "测试数据59518"
+}, {
+  "userid" : "7120abd8-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn56760",
+  "pwd" : "19832",
+  "regTime" : 0,
+  "mark" : "测试数据85827"
+}, {
+  "userid" : "712181d5-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn02018",
+  "pwd" : "78752",
+  "regTime" : 0,
+  "mark" : "测试数据01148"
+}, {
+  "userid" : "71228b93-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn83673",
+  "pwd" : "61692",
+  "regTime" : 0,
+  "mark" : "测试数据87399"
+}, {
+  "userid" : "7123a8d7-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn06916",
+  "pwd" : "40404",
+  "regTime" : 0,
+  "mark" : "测试数据92181"
+}, {
+  "userid" : "7124ace3-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn71564",
+  "pwd" : "70475",
+  "regTime" : 0,
+  "mark" : "测试数据45481"
+}, {
+  "userid" : "71258d64-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn03830",
+  "pwd" : "53687",
+  "regTime" : 0,
+  "mark" : "测试数据76099"
+}, {
+  "userid" : "71267752-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn22383",
+  "pwd" : "02958",
+  "regTime" : 0,
+  "mark" : "测试数据06879"
+}, {
+  "userid" : "7127b1b3-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn14193",
+  "pwd" : "91455",
+  "regTime" : 0,
+  "mark" : "测试数据64740"
+}, {
+  "userid" : "71287eb2-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn45246",
+  "pwd" : "48275",
+  "regTime" : 0,
+  "mark" : "测试数据97234"
+}, {
+  "userid" : "71295bc5-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn07089",
+  "pwd" : "84315",
+  "regTime" : 0,
+  "mark" : "测试数据52243"
+}, {
+  "userid" : "712a4241-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn16289",
+  "pwd" : "37852",
+  "regTime" : 0,
+  "mark" : "测试数据12970"
+}, {
+  "userid" : "712b1785-1433-11eb-97f3-00ff3fd90965",
+  "username" : "Qinnn67072",
+  "pwd" : "34491",
+  "regTime" : 0,
+  "mark" : "测试数据88294"
+}, {
+  "userid" : "读书,看报,冥想",
+  "username" : "读书,看报,冥想",
+  "pwd" : "读书,看报,冥想",
+  "favorites" : [ "读书", "看报", "冥想" ],
+  "regTime" : 0,
+  "mark" : "读书,看报,冥想"
+} ]

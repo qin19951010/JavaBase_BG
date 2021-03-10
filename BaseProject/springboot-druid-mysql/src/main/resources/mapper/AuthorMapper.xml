@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiangnanyidianyu.dao.AuthorDao">
+
+    <select id="queryAuthorWithBooks" resultMap="authorWithBooks">
+        select a.id aid,a.name aname,a.age,a.hobbys,b.id bid,b.name bname
+        from author a,book b
+        where a.id = b.aid and a.id = #{aid}
+    </select>
+
+    <resultMap id="authorBaseInfo" type="author">
+        <id property="id" column="aid"/>
+        <result property="age" column="age"/>
+        <result property="name" column="aname"/>
+        <result property="hobbys" column="hobbys" typeHandler="com.jiangnanyidianyu.handler.List2VarcharHandler"/>
+    </resultMap>
+
+    <resultMap id="authorWithBooks" type="author" extends="authorBaseInfo">
+        <collection property="books" ofType="com.jiangnanyidianyu.bean.Book">
+            <result property="id" column="bid"/>
+            <result property="name" column="bname"/>
+        </collection>
+    </resultMap>
+
+    <insert id="insertAuthor" parameterType="author">
+        insert into author (id,name,age,hobbys)
+        values
+        (#{id},#{name},#{age},#{hobbys,typeHandler=com.jiangnanyidianyu.handler.List2VarcharHandler})
+    </insert>
+</mapper>
