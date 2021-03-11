@@ -4,37 +4,47 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <display-name>Archetype Created Web Application</display-name>
-
-    <!--welcome pages-->
-    <welcome-file-list>
-        <welcome-file>/WEB-INF/jsp/hello.jsp</welcome-file>
-    </welcome-file-list>
-
-    <!--配置springmvc DispatcherServlet-->
     <servlet>
-        <servlet-name>springMVC</servlet-name>
-        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <init-param>
-            <!--配置dispatcher.xml作为mvc的配置文件-->
-            <param-name>contextConfigLocation</param-name>
-            <param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
-        </init-param>
-        <load-on-startup>1</load-on-startup>
-        <async-supported>true</async-supported>
+        <servlet-name>myservlet</servlet-name>
+        <servlet-class>com.jiangnanyidianyu.MyServlet</servlet-class>
     </servlet>
+
     <servlet-mapping>
-        <servlet-name>springMVC</servlet-name>
-        <url-pattern>/</url-pattern>
+        <servlet-name>myservlet</servlet-name>
+        <url-pattern>/myservlet</url-pattern>
     </servlet-mapping>
 
-    <!--把applicationContext.xml加入到配置文件中-->
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/applicationContext.xml</param-value>
-    </context-param>
+<!--    <display-name>Archetype Created Web Application</display-name>-->
 
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
+<!--    &lt;!&ndash;welcome pages&ndash;&gt;-->
+<!--    <welcome-file-list>-->
+<!--        <welcome-file>/WEB-INF/jsp/hello.jsp</welcome-file>-->
+<!--    </welcome-file-list>-->
+
+<!--    &lt;!&ndash;配置springmvc DispatcherServlet&ndash;&gt;-->
+<!--    <servlet>-->
+<!--        <servlet-name>springMVC</servlet-name>-->
+<!--        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>-->
+<!--        <init-param>-->
+<!--            &lt;!&ndash;配置dispatcher.xml作为mvc的配置文件&ndash;&gt;-->
+<!--            <param-name>contextConfigLocation</param-name>-->
+<!--            <param-value>/WEB-INF/dispatcher-servlet.xml</param-value>-->
+<!--        </init-param>-->
+<!--        <load-on-startup>1</load-on-startup>-->
+<!--        <async-supported>true</async-supported>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>springMVC</servlet-name>-->
+<!--        <url-pattern>/</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+<!--    &lt;!&ndash;把applicationContext.xml加入到配置文件中&ndash;&gt;-->
+<!--    <context-param>-->
+<!--        <param-name>contextConfigLocation</param-name>-->
+<!--        <param-value>/WEB-INF/applicationContext.xml</param-value>-->
+<!--    </context-param>-->
+
+<!--    <listener>-->
+<!--        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>-->
+<!--    </listener>-->
 </web-app>

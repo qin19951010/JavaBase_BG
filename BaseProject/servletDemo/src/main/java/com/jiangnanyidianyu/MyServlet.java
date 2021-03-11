@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class MyServlet extends HttpServlet {
-
     /*
     *   1.Servlet接口中三个主要方法:
     *     1)init()
@@ -17,7 +16,6 @@ public class MyServlet extends HttpServlet {
     *     1.抽象类GenericServlet 实现接口 Servlet
     *     2.更为全面的抽象类HttpServlet,继承了GenericServlet
     */
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException
     {
         this.doPost(request,response);
@@ -25,6 +23,6 @@ public class MyServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException
     {
-        response.getWriter().write("hello,I am Servlet");
+        response.getWriter().write("<h1>hello,I am Servlet</h1>");
     }
 }

@@ -29,7 +29,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -188,7 +188,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://F:/江南一点雨/myProject/src/main/java/com/jiangnanyidianyu/AboutGeneric/Automobile.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../servletDemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BaseProject/myProject" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
@@ -238,15 +238,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -320,10 +318,10 @@
     </configuration>
     <list>
       <item itemvalue="Application.B" />
-      <item itemvalue="Application.Socket_Demo" />
       <item itemvalue="JUnit.HashMapTraverse.Test06" />
       <item itemvalue="JUnit.HashMapTraverse.Test07" />
       <item itemvalue="JUnit.POI.POI_07" />
+      <item itemvalue="Application.Socket_Demo" />
     </list>
     <recent_temporary>
       <list>
@@ -395,8 +393,7 @@
       <workItem from="1615192884436" duration="1207000" />
       <workItem from="1615270353762" duration="693000" />
       <workItem from="1615272113047" duration="134000" />
-      <workItem from="1615340687479" duration="17383000" />
-      <workItem from="1615368907799" duration="4693000" />
+      <workItem from="1615340687479" duration="18230000" />
     </task>
     <servers />
   </component>
