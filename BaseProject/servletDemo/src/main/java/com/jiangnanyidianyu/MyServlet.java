@@ -19,6 +19,7 @@ public class MyServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException
     {
         this.doPost(request,response);
+		//2021-3-16 00:56:57
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException
